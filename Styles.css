@@ -1,0 +1,146 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+nav{
+    font-size: 1.2rem;
+  }
+
+.img-section-div{   
+    padding-top: 24.5em;
+    margin-right: 8em; 
+    color: #ffffff;
+    float: right;
+    margin-top: -58vw;
+    position: relative;
+    z-index: 1000;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: right;
+}
+
+.img-section{  
+    width: 100%;
+    height: 50rem;
+    background-image: url(../img/hawaii.jpg);
+    filter: brightness(50%);
+    background-size: cover;
+    
+}
+
+.titulo-oradores{
+    padding: 1em 0;
+    text-align: center;
+}
+
+
+.div-image-section{  
+    width: 50%;
+    height: 30em;
+    background-image: url(../img/honolulu.jpg);
+    background-size: cover;
+}
+
+
+.div-text-section{
+
+    color: #fff;
+    width: 50%;
+    background-color: #424949  ;
+}
+
+.div-text-section p{
+  font-size: .8em;
+}
+
+.div-text-section div{
+    margin: 1em 0 0 1em;
+}
+
+.div-text-section div input{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.section-img-text{
+    display: flex;
+}
+
+.conviertete-en-orador{
+        
+    width: 60%;
+    margin: 0 auto 2em;
+    }
+
+.titulo-conviertete{
+    width: fit-content;
+    margin: 0 auto .5em;
+    }
+
+.titulo-conviertete p{
+    margin: 1em 0 0 .5em;
+}
+
+#exampleInputText{
+    margin: 0 auto;
+    width: 48%;
+}
+
+.mb-3{
+    display: flex;
+    }
+
+.conviertete-en-orador form p{
+    width: fit-content;        
+    margin: 1em auto;
+}
+
+#boton-enviar{
+    width: 100%;
+    margin-left: 1%;
+    border: 0;
+    background-color: #7FC733;
+}
+
+#exampleFormControlTextarea1{
+    width: 100%;
+    margin-left: 1%;
+}
+
+#conoce-mas:hover{
+    background-color: yellow;
+    color: #444;
+}
+
+
+#parrafo{
+    margin-top: 1em;
+}
+
+footer{
+    width: 100%;
+    height: 10em; 
+    display: flex;
+    justify-content: center;
+    background: linear-gradient( 90deg, #114161,rgb(66, 124, 163));
+}
+
+footer a{
+    color: #fff;
+    padding: 0 2em;
+}
+
+footer a:hover{  
+    color: black;
+} 
+
+ul{  
+    display: flex;
+} 
