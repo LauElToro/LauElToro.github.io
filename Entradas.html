@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>Tickets</title>
+  <link rel="stylesheet" href="/Styles.css">
+</head>
+
+<body>
+
+  <!-- BARRA DE NAVEGACION -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="barra de navegacion ">
+            <img src="img/codoacodo.png" width="120" height="80" alt="logo Codo a Codo">Conf Bs. As. </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active"> <a class="nav-link" href="#principal" style="color:white">La
+                            conferencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#oradores" style="color:gray">Los oradores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ubicacion" style="color: gray">El lugar y la
+                            fecha</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#orador" style="color: gray">Conviértete en
+                            orador</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Entradas.html" style="color: green">Comprar tickets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+  <!-- cards -->
+  <div>
+    <div class="flex-container">
+      <div class="flex-item blue">
+        <h4>Estudiante</h4>
+        <p>Tiene un descuento</p>
+        <b>80%</b>
+        <p><small class="text muted">Presentar documentacion</small></p>
+
+      </div>
+      <div class="flex-item aqua">
+        <h4>Trainee</h4>
+        <p>Tiene un descuento</p>
+        <b>50%</b>
+        <p><small class="text muted">Presentar documentacion</small></p>
+
+      </div>
+      <div class="flex-item yellow">
+        <h4>Junior</h4>
+        <p>Tiene un descuento</p>
+        <b>15%</b>
+        <p><small class="text muted">Presentar documentacion</small></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row pt-1">
+      <h5 class="text-center pb-1 pt-3"><small>VENTA</small></h5>
+      <h3 class="text-center text-uppercase">VALOR DEL TICKET $200 </h3>
+    </div>
+  </div>
+
+  <!-- form -->
+  <div class="flex-container">
+    <form class="form w-50">
+      <div class="row m-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombre">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellido">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Correo">
+        </div>
+        <div class="col">
+          <label class="form-label" for="cantidad">Cantidad</label>
+          <input type="number" id="cantidad" class="form-control" placeholder="cantidad">
+        </div>
+        <div class="col">
+          <label class="form-label" for="categoria" >Categoria</label>
+          <select class="form-select" id="categoria">
+            <option selected value="0">Estudiante</option>
+            <option value="1">Trainee</option>
+            <option value="2">Junior</option>
+          </select>
+        </div>
+        <!-- total a pagar -->
+        <div class="pago mb-3">
+          <input readonly type="text" class="form-control" id="pagar" placeholder="*Total a pagar:$">
+        </div>
+      </div>
+
+
+
+
+      <!-- botones -->
+
+      <div class="linea row m-3">
+        <div class="col">
+          <input type="reset" class="form-control">
+        </div>
+        <div class="col">
+          <button onclick="totalPagar(event)" class="form-control">Resume</button>
+        </div>
+
+      </div>
+    </form>
+    
+  </div>
+
+
+  <!-- footer -->
+  <footer>
+    <section class="navbar navbar-expand-lg">
+
+      <div class=" footer navbar-nav">
+        <a class="nav-link" >Preguntas Frecuentes</a>
+        <a class="nav-link" >Contactáctanos</a>
+        <a class="nav-link" >Prensa</a>
+        <a class="nav-link" >Conferencias</a>
+        <a class="nav-link">Términos y condiciones</a>
+        <a class="nav-link" >Privacidad</a>
+        <a class="nav-link" >Estudiantes</a>
+      </div>
+
+      </div>
+    </section>
+
+
+  </footer>
+
+
+<!-- JavaS del form-->
+
+<script src="script.js"></script>
+
+
+
+</body>
+
+</html>
